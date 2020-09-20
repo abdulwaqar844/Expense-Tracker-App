@@ -3,8 +3,13 @@
   width: 50%;
   background-color: burlywood;
   width: 300px;
-  border: 15px solid green;
-  padding: 25px 50px 75px 100px;
+  border: 15px solid chartreuse;
+  padding: 40px 50px 75px 100px;
   margin: 50px;
   
+  }
+  .top-container{
+    box-shadow: cornflowerblue;
+    box-sizing: border-box;
+align-content: flex-start;
   }
