@@ -2,11 +2,14 @@ import React from 'react';
 import './App.css';
 
 function Child() {
-  return (
-    <h1>
-        This is child 
+    return (
+        <div className="container">
+            <h1 className="header">
+                Expense Tracker App
+
     </h1>
 
+        </div>
     );
 }
 
