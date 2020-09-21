@@ -12,7 +12,9 @@ export function App() {
       <Header />
       <div className="container">
       <Balance />
+<div className="summary ">
       <AccountSummary/>
+</div>
       <TransactionHistory />
       <AddTransaction />
       </div > 
