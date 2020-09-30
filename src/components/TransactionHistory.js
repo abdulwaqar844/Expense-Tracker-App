@@ -12,7 +12,6 @@ const {transactions} =useContext(GlobalContext);
                 {transactions.map(transaction=>
                     <Transaction key={transaction.id}  transaction={transaction}/>
                     )}
-                    <span>$1000.00</span>
                 </ul>
               
         </div>
