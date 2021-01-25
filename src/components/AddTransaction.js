@@ -1,29 +1,19 @@
 import React, { useState, useContext } from 'react';
-
 // Import the Global State
 import { GlobalContext } from '../context/GlobalState';
-
-
 export const AddTransaction = () => {
-
     const [description, setDescription] = useState('');
     const [transactionAmount, setTransactionAmount] = useState('');
-
     const { addTransaction } = useContext(GlobalContext);
-
     const onSubmit = (e) => {
         e.preventDefault();
-
         const newTransaction = {
             id: new Date().getTime(),
             description,
             transactionAmount: +transactionAmount
         }
-
         addTransaction(newTransaction);
-
     }
-
     return (
         <div>
             <h3>Add New Transaction</h3>
@@ -42,7 +32,7 @@ export const AddTransaction = () => {
                 </div>
                 <div className="form-control">
                     <label htmlFor="transactionamount">
-                        Transaction Amount
+                        Transaction Amount (Use - for expenses)
                     </label>
                     <input  type="number" 
                             id="transactionamount"
